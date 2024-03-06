@@ -27,14 +27,14 @@ def main():
 
     os.system("mkdir result")
 
-    fname, img, ratio = img_read(file)
+    fname, fnum, img, ratio = img_read(file)
     x_cordi_list, y_cordi_list, xy_cordi_list = getOrthoCordinate(img)
     x_center, y_center, center = getCenter(x_cordi_list, y_cordi_list)
     theta_list, radius_list = getPolarCordinate(xy_cordi_list, center)
     new_theta_list, new_radius_list = sigmaClipping(theta_list, radius_list)
     xdata, ydata = setRange(new_theta_list, new_radius_list)
 
-    pred_model = findOptmodel(xdata, ydata)
+    pred_model = findOptmodel(xdata, ydata, fnum)
     final_xy_cordi_list = predCordinate(pred_model,x_center,y_center)
     true_dna_len = dna_length(final_xy_cordi_list,ratio)
     showNsave(img,fname,final_xy_cordi_list,true_dna_len)
@@ -67,11 +67,12 @@ def cicle_fit(xdata, ydata,no):
 def img_read(file):
     base_dir, file_name = os.path.split(file)
     fname, ext = os.path.splitext(file_name)
+    fnum = int(fname.split('_')[0])
     ratio = int(fname.split('_')[1])/int(fname.split('_')[2])
     img = Image.open(file).convert('L')
     img_in = img_as_ubyte(img)    
     img = np.reshape(img_in, [img_in.shape[0], img_in.shape[1]])
-    return fname, img, ratio
+    return fname, fnum, img, ratio
 
 def getOrthoCordinate(image): #unet_image
     distance = ndi.distance_transform_edt(image)
@@ -138,10 +139,16 @@ def setRange(new_theta_list,new_radius_list):
                             new_radius_list[:pad_len]),axis=0)
     return xdata, ydata
 
-def findOptmodel(xdata, ydata):
+def findOptmodel(xdata, ydata, file_num):
     corr_list = []
     no_list = []
-    for no in range(10,20):
+    opt_range = []
+    if int(file_num) > 12:
+        opt_range = list(range(10))
+    else:
+        opt_range = list(range(5,15))
+
+    for no in opt_range:
         corr = cicle_fit(xdata,ydata,no+1)
         corr_list.append(corr)
         no_list.append(no)
