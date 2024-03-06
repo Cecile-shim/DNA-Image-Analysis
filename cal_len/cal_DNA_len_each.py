@@ -58,7 +58,7 @@ def set_ratio(img_type,img_no):
     file_list = glob.glob('dataset/%s/ori_imgs/*.png'%(img_type))
     for file in file_list:
         base_dir, file_name = os.path.split(file)
-        file_nums = re.findall('|d+',file_name)
+        file_nums = re.findall('\d+',file_name)
         if file_nums[0] == img_no:
             ratio = int(file_nums[2]) / int(file_nums[1])
     return ratio
