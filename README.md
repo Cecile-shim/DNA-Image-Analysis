@@ -14,6 +14,8 @@ Artificial Intelligence Enhanced Analysis of Genomic DNA Visualized with Nanopar
 
 ## Requirement
 Python 3.10.9
+
+
 TensorFlow 2
 
 
