@@ -21,7 +21,7 @@ Artificial Intelligence Enhanced Analysis of Genomic DNA Visualized with Nanopar
 
 
 ## Usage
-코드 사용법 step별로 정리 - unet은 tensorflow-unet-labelme 을 reference 하기 (하이퍼링크 추가)
+The dataset used in both cal_len.py and cal_radius.py has been segmented from the original images through the U-Net training process. For instructions on how to use unet.ipynb, refer to the tensorflow-unet-labelme repository. (link add)
 
 
 ### 1. Calculate length of the linear DNA
@@ -30,4 +30,4 @@ Artificial Intelligence Enhanced Analysis of Genomic DNA Visualized with Nanopar
 ### 2. Calculate length of the circular DNA
 
 
-For more information, please refer our paper.
+For more information, please refer to our paper.
