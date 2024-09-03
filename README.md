@@ -18,10 +18,10 @@ Artificial Intelligence Enhanced Analysis of Genomic DNA Visualized with Nanopar
 
 
 ## Installation
-'''
+```
 git clone dna-image-analysis
 cd dna-image-analysis
-'''
+```
 
 ## Usage
 The dataset used in both cal_len.py and cal_radius.py has been segmented from the original images through the U-Net training process. For instructions on how to use unet.ipynb, refer to this link : <https://github.com/CatchZeng/tensorflow-unet-labelme>
