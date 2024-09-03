@@ -18,7 +18,7 @@ Artificial Intelligence Enhanced Analysis of Genomic DNA Visualized with Nanopar
 
 
 ## Installation
-'''
+'''python
 git clone https://github.com/cecile-shim/dna-image-analysis # fix later
 cd dna-image-analysis
 '''
