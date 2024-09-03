@@ -69,7 +69,7 @@ cal_radius
 ├── dataset
 └── result
 ```
-0. If you are using a custom dataset, 데이터셋 폴더에 unet 학습된 segmented images를 넣어라. 또한 해당 파일 이름에서 `1_200_474.jpg` 와 같이 filenum_pix_um 순으로 정보를 드러내야 한다.
+0. If you are using a custom dataset, place the U-Net trained segmented images into the dataset folder. Additionally, ensure that the filenames reveal information in the format filenum_pix_um, such as 1_200_474.jpg.
 1. Run `python cal_radius.py num`. The 'num' should be same with 'filenum'
 2. You can get the output in the 'result' directory.
 
