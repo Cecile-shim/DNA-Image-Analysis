@@ -19,7 +19,7 @@ Artificial Intelligence Enhanced Analysis of Genomic DNA Visualized with Nanopar
 
 ## Installation
 ```
-git clone [dna-image-analysis](https://github.com/cecileshim/dna-image-analysis.git)
+git clone https://github.com/cecileshim/dna-image-analysis.git
 cd dna-image-analysis
 ```
 
@@ -28,9 +28,26 @@ The dataset used in both cal_len.py and cal_radius.py has been segmented from th
 
 
 ### 1. Calculate length of the linear DNA
-
+```
+cal_len
+├── cal_DNA_len.py
+├── cal_DNA_len_each.py
+└── dataset
+    ├── 1
+    │   ├── ori_imgs
+    │   └── unet_imgs
+    └── 2
+        ├── ori_imgs
+        └── unet_imgs
+```
 
 ### 2. Calculate length of the circular DNA
+```
+cal_radius
+├── cal_radius.py
+├── dataset
+└── result
+```
 
 
 For more information, please refer to our paper.
