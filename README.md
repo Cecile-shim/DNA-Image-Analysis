@@ -18,10 +18,14 @@ Artificial Intelligence Enhanced Analysis of Genomic DNA Visualized with Nanopar
 
 
 ## Installation
+'''
+git clone https://github.com/cecile-shim/dna-image-analysis # fix later
+cd dna-image-analysis
+'''
 
 
 ## Usage
-The dataset used in both cal_len.py and cal_radius.py has been segmented from the original images through the U-Net training process. For instructions on how to use unet.ipynb, refer to the tensorflow-unet-labelme repository. (link add)
+The dataset used in both cal_len.py and cal_radius.py has been segmented from the original images through the U-Net training process. For instructions on how to use unet.ipynb, refer to this link : <https://github.com/CatchZeng/tensorflow-unet-labelme>
 
 
 ### 1. Calculate length of the linear DNA
