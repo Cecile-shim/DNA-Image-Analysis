@@ -9,7 +9,7 @@ The advent of artificial intelligence (AI) has greatly enhanced the statistical 
 
 
 ## Citation
-Artificial Intelligence Enhanced Analysis of Genomic DNA Visualized with Nanoparticle-Tagged Peptides under Electron Microscopy (Research Article, DOI: [https://doi.org/10.1002/smll.202405065]([url](https://doi.org/10.1002/smll.202405065)))
+P. R. Sundharbaabu, J. Chang, Y. Kim, Y. Shim, B. Lee, C. Noh, S. Heo, S. S. Lee, S.-H. Shim, K. Lim, K. Jo, J. H. Lee, Artificial Intelligence-Enhanced Analysis of Genomic DNA Visualized with Nanoparticle-Tagged Peptides under Electron Microscopy. _Small_ 2024, 2405065. [https://doi.org/10.1002/smll.202405065](https://doi.org/10.1002/smll.202405065)
 
 
 ## Requirement
@@ -77,4 +77,4 @@ cal_radius
 ---
 
 
-For more information, please refer to our [paper]([url](https://doi.org/10.1002/smll.202405065)).
+For more information, please refer to our [article](https://doi.org/10.1002/smll.202405065).
